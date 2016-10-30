@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title></title>
+        <link rel="stylesheet" href="nav.css"/>
+    </head>
+    <body abc="123">
+        <div class="navigation" id='test'>
+            <ul>
+                <li class="open">
+                    <a href="javascript:;">menu1</a>
+                    <ul>
+                        <li class="active"><a href="javascript:;">1submenu1</a>
+                        <li><a href="javascript:;">1submenu2</a>
+                        <li><a href="javascript:;">1submenu3</a>
+                        <li><a href="/test/index.html">1submenu4</a>
+                        <li><a href="javascript:;">1submenu5</a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">menu2</a>
+                    <ul>
+                        <li><a href="javascript:;">2submenu1</a>
+                        <li><a href="javascript:;">2submenu2</a>
+                        <li><a href="javascript:;">2submenu3</a>
+                        <li><a href="javascript:;">2submenu4</a>
+                        <li><a href="javascript:;">2submenu5</a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">menu3</a>
+                    <ul>
+                        <li><a href="javascript:;">3submenu1</a>
+                        <li><a href="javascript:;">3submenu2</a>
+                        <li><a href="javascript:;">3submenu3</a>
+                        <li><a href="javascript:;">3submenu4</a>
+                        <li><a href="javascript:;">3submenu5</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
+<script src="../src/Shin.SideNavigation.js"></script>
+<script>
+var nav;
+nav = new Navigation(document.getElementById('test'));
+nav.initial();
+</script>

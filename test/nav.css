@@ -1,0 +1,39 @@
+.navigation {
+    list-style:none;
+    width:250px;
+    background-color:gray;
+}
+
+.navigation ul {
+    margin:0;
+    padding:0;
+}
+
+.navigation li {
+    list-style:none;
+    display:block;
+    background-color:yellow;
+    padding:5px;
+}
+
+.navigation li a {
+    text-decoration:none;
+}
+
+.navigation>ul>li>ul {
+    display:none;
+}
+
+.navigation .active {
+    background-color:white;
+    display:block;
+}
+
+.navigation .open>a {
+    background-color:green;
+    display:block;
+}
+
+.navigation .open>ul {
+    display:block;
+}
